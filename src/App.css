@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      list-style: none;
+      /* overflow-y: hidden; */
+      scroll-margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*:focus {
+      outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+      scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Optional: customize the scroll speed and timing function */
+html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 0rem;
+      /* Optional: adjust the scroll offset to account for a fixed header */
+      --scroll-duration: 600ms;
+      /* Optional: adjust the scroll duration */
+      --scroll-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+      /* Optional: adjust the scroll timing function */
 }
 
-.App-link {
-  color: #61dafb;
+/* Add a custom scrollbar if desired */
+::-webkit-scrollbar {
+      width: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track {
+      background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+}
+
+:root {
+      --head-color: #ffc86b;
+      --bg-color: #5C6060B8;
+      --bg-color-1: #34353a;
+      --bg-color-2: #31333b;
+      --bg-color-3: #9a9b9c;
+      --text-font: 'Open Sans', sans-serif;
+      --head-font: 'Bruno Ace SC', cursive;
+}
+
+.home,
+.navbar,
+.contact {
+      background: var(--bg-color-1);
+}
+
+.about,
+.project {
+      background: var(--bg-color-2);
+}
+
+.section-padding {
+      padding: 4rem;
+}
+
+.section-heading {
+      color: #f4f4f4;
+      font-size: 40px;
+      font-family: var(--head-font);
+      margin: 1rem 0;
+      padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width:1050px) {
+      .section-padding {
+            padding: 3rem;
+      }
+}
+
+@media screen and (max-width:750px) {
+      .section-padding {
+            padding: 1rem;
+      }
+}
+
+@media screen and (max-width:450px) {
+      .section-padding {
+            padding: 0.5rem;
+      }
 }

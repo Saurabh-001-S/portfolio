@@ -1,0 +1,138 @@
+/* .project {
+      height: 100vh;
+} */
+
+.project.scroll {
+      transition: transform 0.5s ease-in-out;
+}
+
+.project_info-section {
+      width: 90vw;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+}
+
+.project_info-box {
+      /* width: 90vw; */
+      display: grid;
+      grid-template-areas: "p1 p2 p3" "p4 p5 p6";
+      gap: 1rem;
+}
+
+.project_info-box-img {
+      margin-top: 1rem;
+      width: 100%;
+      height: 100%;
+      position: relative;
+}
+
+.project_info-box-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      opacity: 1;
+      transition: .5s ease;
+}
+
+.project_info-box-text {
+      position: absolute;
+      z-index: 2;
+      top: 40%;
+      right: 24%;
+      text-align: center;
+      opacity: 0;
+}
+
+.project_info-box-text>h1 {
+      font-family: var(--head-font);
+      font-size: 30px;
+}
+
+.project_info-box-text p {
+      color: white;
+      font-size: 16px;
+      font-family: var(--text-font);
+      margin-bottom: 0.5rem;
+}
+
+.project_info-box-text>a {
+      color: #000;
+      background-color: var(--head-color);
+      border: none;
+      padding: 0.3rem 0.5rem;
+      font-size: 15px;
+      border-radius: 10px;
+      margin: 0.8rem;
+}
+
+a>svg {
+      top: 3px;
+      position: relative;
+      left: 4px;
+      width: 18px;
+}
+
+.project_info-box-img:hover img {
+      opacity: .35;
+}
+
+.project_info-box-img:hover .project_info-box-text {
+      opacity: 1;
+}
+
+.p1 {
+      grid-area: p1;
+}
+
+.p2 {
+      grid-area: p2;
+}
+
+.p3 {
+      grid-area: p3;
+}
+
+.p4 {
+      grid-area: p4;
+}
+
+.p5 {
+      grid-area: p5;
+}
+
+.p6 {
+      grid-area: p6;
+}
+
+
+@media screen and (max-width:1050px) {
+      .project_info-box {
+            /* width: max-content; */
+            height: max-content;
+            display: grid;
+            grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+      }
+}
+
+@media screen and (max-width:750px) {
+      .project_info-box {
+            grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+            margin: auto;
+      }
+
+      .project_info-box-text>h1 {
+            font-size: 25px;
+      }
+
+      .project_info-box-text p {
+            font-size: 12px;
+      }
+
+      .project_info-box-text>a {
+            font-size: 12px;
+      }
+}

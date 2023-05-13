@@ -1,0 +1,133 @@
+.contact {
+      padding: 3rem 0;
+      padding-bottom: 0;
+}
+
+
+.contact-heading {
+      display: flex;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+}
+
+.contact-heading>span {
+      padding: 0 1.5rem;
+}
+
+.contact-links {
+      background-color: var(--bg-color);
+      padding: 4rem;
+      top: -63px;
+      position: relative;
+      z-index: 0;
+}
+
+
+.horizontal_line {
+      border: 2px solid var(--head-color);
+      margin: auto;
+      width: 61rem;
+      height: 0;
+}
+
+.contact-link-row {
+      display: flex;
+      width: fit-content;
+      margin: auto;
+}
+
+.contact-link_box {
+      display: flex;
+      gap: 1rem;
+      margin: auto 20px;
+      background-color: var(--bg-color-2);
+
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      font-size: 1.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+}
+
+.contact-link_box>svg {
+      width: 25px;
+      color: #fff;
+}
+
+.contact-link_box>p {
+      color: var(--head-color);
+}
+
+.contact-link_box :hover svg {
+      color: var(--head-color);
+}
+
+.contact-link_box :hover p {
+      color: #fff;
+}
+
+.contact-footer-links {
+      display: flex;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      top: -75px;
+}
+
+.contact-footer-links>span {
+      display: flex;
+      padding: 0 1rem;
+}
+
+.contact-footer-links>span>a {
+      color: #fff;
+      padding: 0 0.5rem;
+}
+
+.contact-footer-links svg {
+      width: 25px;
+      height: 25px;
+}
+
+.footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+}
+
+.footer p,
+a {
+      color: white;
+}
+
+@media screen and (max-width:750px) {
+      .contact-link-row {
+            flex-direction: column;
+            width: max-content;
+      }
+}
+
+@media screen and (max-width:450px) {
+      .contact-link-row {
+            width: max-content;
+      }
+
+      .contact-link_box {
+            gap: 0.7rem;
+            margin-bottom: 1rem;
+            padding: 0.7rem;
+            font-size: 1.2rem;
+      }
+
+      .contact-links {
+            padding: 2rem 0;
+      }
+
+      .contact-heading>span {
+            font-size: 21px;
+            padding: 0 0.5rem;
+      }
+}
