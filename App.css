@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Oswald:wght@300&display=swap');
+
+@font-face {
+  font-family: head-main;
+  src: url(./Heading-Now-Variable.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background: var(--rich-black);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+:root {
+  --sinopia: #dc2f02ff;
+  --orange: rgb(252, 127, 3);
+  --gray: #a29c94;
+  --beige: #e9edc9ff;
+  --cornsilk: #fefae0ff;
+  --papaya-whip: #faedcdff;
+  --buff: #d4a373ff;
+
+  --p-font: 'Oswald', sans-serif;
+  --head-font: Avant Garde, sans-serif;
+  --head-main: head-main;
+}
+
+.p_hover {
+  color: var(--orange);
+}
